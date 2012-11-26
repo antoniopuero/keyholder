@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+	<title>KeyholderJS</title>
+	<meta default-charset='utf-8'>
+	<link rel="stylesheet" type="text/css" href="kh.css">
+	<script type="text/javascript" src = 'jquery-1.7.2.min.js'></script>
+	<script type="text/javascript" src = 'kh.js'></script>
+</head>
+<body>
+<div id='container'>
+	<h2 id='1'>Main info</h2>
+	<div id='info' class='block'>
+		<p>Hello!</p>
+		<p>This simple web-page is dedicated to a such simple JS library, which helps to handle some keypresses. Is it what you need and looking for? Welcome to presentation site! </p>
+		<p>If you still here, that you need simple keyhandler to do what you want on your own web-page or wherever you wish. You're very lucky man! Scroll down or read the next paragraph.</p>
+		<p>I'm so sorry, no useful and helpful information here. Just scroll down!</p>
+		<p>But if you want to download keyholderJS library you should click here: <a  href="keyholder.js"><img id = 'download' src="kh.gif"></a></p>
+	</div>
+	<h2 id='2'>Up and running</h2>
+	<div id='study' class='block'>
+		<p>If you know basic JavaScript, you'll understand how to use this library.</p>
+		<p>Basic function, from which all begin is <i>Helpers.take().</i> It takes as parameter a universal selector, like in css. (If you know  very popular JS library jQuery, it use universal css-selector as well.) And this function returns an object, with which we'll work. For example: <i>var a=Helpers.take('#element-id');</i> where are <i>var a</i> is our main object, <i>element-id</i> - id of element we want to handle.</p>
+		<p>The next function is <i>ourObject.kbhit()</i>. It takes as parameters string and callback function. String is a single letter or combination of keys. Callback-function - function, which you want to handle on keypress event. Example of usage this function: <i>ourObject.kbhit('string', functionsName)</i>. ourObject is object, which we have got from <i>Helpers.take()</i> function. 'string' can be a single letter, such as 'o' or 'L', and can be a combination of keys name, such as 'l+shift', 'f+shift', 'home', 'enter', 'space', 'backspace' etc. And callback-function is function we want to handle on different keypress.</p>
+		<p>And the last function is <i>ourObject.anti('string')</i>. This function removes handler from keypress. It takes as parameter string value, which is identical to string which we pass into kbhit() function as first parameter.</p>
+	</div>
+	<h2 id='3'>Contact me</h2>
+	<div id='contact' class='block'>
+		<p>If you have some additional questions or offers write me a letter, because it is always pleasant to recieve a letter. Thank You!</p>
+		<form method = 'get' name = 'sendform'action='mailto:antonio.puero@gmail.com'>
+			<p>Subject: <input type='text' name='subject' size='120'></p>
+			<p>Text:</p>
+			<p><textarea cols='102' rows='20' name='body'></textarea></p>
+			<p><button>Submit!</button></p>
+		</form>
+	</div>
+	<div id='footer'>Created by Anton Savchenko &copy;2012</div>
+</div>
+</body>
+</html>
